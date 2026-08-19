@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "qixi",
+      "title": "💗 七夕心动实验室",
+      "description": "爱心漂浮，星光点点，为你制造一个浪漫夜晚",
+      "cover": "https://picsum.photos/seed/qixicover/800/600",
+      "slug": "qixi",
+      "tags": ["情感", "节日"]
+    },
+    {
+      "id": "memory-wall",
+      "title": "📸 我们的回忆墙",
+      "description": "把每一个心动的瞬间都钉在墙上，拼成属于我们的时光拼图",
+      "cover": "https://picsum.photos/seed/memorywall/800/600",
+      "slug": "memory-wall",
+      "tags": ["情感", "互动"]
+    }
+  ]
+}

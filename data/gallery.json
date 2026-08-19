@@ -1,0 +1,68 @@
+{
+  "photos": [
+    {
+      "id": "1",
+      "title": "西湖落日",
+      "date": "2026-07-20",
+      "description": "夕阳下的断桥，我们的影子拉得很长，仿佛要把这一刻拉成永远。",
+      "imageUrl": "https://picsum.photos/seed/westlake/800/800",
+      "category": "旅行"
+    },
+    {
+      "id": "2",
+      "title": "海边漫步",
+      "date": "2026-08-15",
+      "description": "海风带着咸味，你踩着浪花笑得像个孩子，我按下快门留住这一秒。",
+      "imageUrl": "https://picsum.photos/seed/seaside/800/800",
+      "category": "旅行"
+    },
+    {
+      "id": "3",
+      "title": "清晨咖啡",
+      "date": "2026-06-10",
+      "description": "周末的早晨，两杯拿铁，一本书，时间慢得刚刚好。",
+      "imageUrl": "https://picsum.photos/seed/coffee/800/800",
+      "category": "日常"
+    },
+    {
+      "id": "4",
+      "title": "周年纪念日",
+      "date": "2026-05-01",
+      "description": "烛光、蛋糕和你，所有关于幸福的词汇都在这一晚具象化了。",
+      "imageUrl": "https://picsum.photos/seed/anniv/800/800",
+      "category": "纪念日"
+    },
+    {
+      "id": "5",
+      "title": "雨后街角",
+      "date": "2026-07-02",
+      "description": "突然的阵雨，我们挤在同一把伞下，雨声成了最浪漫的伴奏。",
+      "imageUrl": "https://picsum.photos/seed/rainy/800/800",
+      "category": "日常"
+    },
+    {
+      "id": "6",
+      "title": "山顶日出",
+      "date": "2026-08-15",
+      "description": "凌晨四点爬上山顶，云海翻涌，第一缕阳光照在你脸上的瞬间，值了。",
+      "imageUrl": "https://picsum.photos/seed/sunrise/800/800",
+      "category": "旅行"
+    },
+    {
+      "id": "7",
+      "title": "花田牵手",
+      "date": "2026-04-12",
+      "description": "成片的薰衣草，你的裙摆和风一起飞，我牵着你的手不想松开。",
+      "imageUrl": "https://picsum.photos/seed/flowers/800/800",
+      "category": "纪念日"
+    },
+    {
+      "id": "8",
+      "title": "夜市小吃",
+      "date": "2026-06-28",
+      "description": "烟火气最浓的地方，你举着烤串冲我笑，平凡日子里的高光时刻。",
+      "imageUrl": "https://picsum.photos/seed/market/800/800",
+      "category": "日常"
+    }
+  ]
+}

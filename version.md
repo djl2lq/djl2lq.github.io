@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-08-19（项目重构为 Next.js）
+
+### 🎉 新增
+- 项目整体重构为 **Next.js 14 (App Router)** 情侣博客日记网站，采用 `output: 'export'` 静态导出，面向 GitHub Pages 部署
+- 新增首页 `/`：Hero 区（渐变背景 + 浮动爱心）、「我们的故事」简介（相识 / 相知 / 相爱）、最新 3 篇日记预览
+- 新增博客日记模块：列表页 `/diary`（响应式卡片网格）与详情页 `/diary/[slug]`，支持 Markdown Frontmatter 解析与图文混排渲染（gray-matter + remark），含上一篇 / 下一篇导航
+- 新增相册模块 `/gallery`：照片网格 + 灯箱预览（键盘 ←/→ 切换、Esc 关闭）+ 分类筛选
+- 新增 Others 模块：列表页 `/others` 与详情页 `/others/[slug]`
+- 新增七夕浪漫详情页 `/others/qixi`：粉紫渐变背景、24 个浮动爱心、打字机情诗、点击生成爱心交互、返回按钮
+- 新增公共组件：`Navigation`（响应式折叠菜单 + 当前页高亮）、`Footer`（动态相恋天数）、`Card`、`Lightbox`、`DiaryList`、`PhotoGrid`、`OthersGrid`、`QixiDetail`
+- 新增工具函数 `lib/posts.js`（Markdown 读取、摘要自动提取、相邻文章）、`lib/utils.js`（日期格式化、相恋天数计算）
+- 新增示例数据：3 篇日记（`posts/`）、8 张相册照片（`data/gallery.json`）、2 个小玩意（`data/others.json`，含七夕）
+- 新增全局样式 `styles/globals.css`（Tailwind + Google Fonts + Markdown 排版样式）
+- 新增配置文件 `next.config.js`、`tailwind.config.js`、`postcss.config.js`、`jsconfig.json`、`public/favicon.svg`，更新 `package.json` 与 `.gitignore`
+- 新增 `README.md` 部署说明（本地开发 / 预览 / GitHub Pages 部署）
+
+### ⚡ 优化
+- 无（本次为整体重构）
+
+### 🗑️ 删除
+- 移除旧版 Jekyll 学术主题全部相关文件，完成技术栈迁移：`_config.yml`、`_config_docker.yml`、`Gemfile`、`Dockerfile`、`docker-compose.yaml`，以及 `_data`、`_includes`、`_layouts`、`_pages`、`_posts`、`_portfolio`、`_publications`、`_sass`、`_talks`、`_teaching`、`assets`、`images`、`files`、`markdown_generator`、`scripts`、`talkmap` 等目录及旧版 `CONTRIBUTING.md`、`README_CN.md`
+
+---
+
 ## 2026-08-19
 
 ### 🎉 新增

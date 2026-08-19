@@ -1,13 +1,29 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
+# 依赖
+/node_modules
+/.pnp
+.pnp.js
 
-# Ignore the directory for local files during development
-local/
+# 构建产物
+/out
+/.next/
+/build
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# 本地开发
+/local
 
-# Ingore files created by npm
-node_modules
-package-lock.json
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量
+.env*.local
+.env
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
