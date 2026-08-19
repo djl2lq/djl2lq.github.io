@@ -1,0 +1,60 @@
+# Next.js 静态导出部署到 GitHub Pages
+# 每次 push 到 main 分支时,自动 npm build 并发布 out/ 内容
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # 支持手动触发
+  workflow_dispatch:
+
+# 让 GitHub Pages 有权限部署
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只允许一个部署运行
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 构建（静态导出到 out/）
+        run: npm run build
+
+      # 关键：添加 .nojekyll，防止 GitHub Pages 用 Jekyll 处理
+      # 否则 _next/ 等下划线开头的目录会被忽略，导致样式和 JS 丢失
+      - name: 添加 .nojekyll
+        run: touch out/.nojekyll
+
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
