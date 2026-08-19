@@ -4,6 +4,34 @@
 
 ---
 
+## 2026-08-19（新增七夕日记）
+
+### 🎉 新增
+- 新增七夕日记《七夕夜：一捧花里的小确幸》（`posts/20260819-qixi.md`），含 3 张实拍配图
+- 新增图片目录 `public/images/20260819-qixi/`（1.jpg / 2.jpg / 3.jpg）
+
+### ⚡ 优化
+- 修复日记 frontmatter `cover` 字段写法：从错误的 Markdown 语法 `![](...)` 改为标准字符串路径 `"/images/20260819-qixi/1.jpg"`
+
+### 🗑️ 删除
+- 无
+
+---
+
+## 2026-08-19（新增操作手册文档）
+
+### 🎉 新增
+- 新增用户操作手册 `操作手册.md`：分步教学文档，覆盖写日记、相册分类上传、Others 小玩意管理、图片资源管理、本地预览与发布上线流程、常见问题排查、日常操作速查表等全部常用操作
+
+### ⚡ 优化
+- 修复 `jsconfig.json` 的 TypeScript 弃用警告：移除已弃用的 `baseUrl` 字段，保留 `paths` 别名配置（`@/*`），不影响 Next.js 构建与别名解析
+- 新增 GitHub Actions 自动部署配置（`.github/workflows/deploy.yml`）：push 到 main 后自动 `npm build` 并发布 `out/` 到 GitHub Pages，含 `.nojekyll` 防止 Jekyll 忽略 `_next/` 资源
+
+### 🗑️ 删除
+- 无
+
+---
+
 ## 2026-08-19（项目重构为 Next.js）
 
 ### 🎉 新增
