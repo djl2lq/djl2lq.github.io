@@ -10,7 +10,7 @@ const navItems = [
   { href: '/', label: '首页' },
   { href: '/diary', label: '日记' },
   { href: '/gallery', label: '相册' },
-  { href: '/others', label: 'Others' },
+  { href: '/others', label: '奇思妙想' },
 ];
 
 export default function Navigation() {

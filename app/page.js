@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-24 sm:py-32 text-center text-white">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-sm mb-6">
             <Sparkles className="w-4 h-4" />
-            <span>欢迎来到我们的小宇宙</span>
+            <span>欢迎来到 文青&大江 的小宇宙</span>
           </div>
           <h1 className="font-display text-4xl sm:text-6xl font-bold mb-6">💗 我们的故事</h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -61,11 +61,11 @@ export default function HomePage() {
           <div className="space-y-4 text-ink-medium leading-relaxed">
             <p>
               <span className="font-semibold text-couple-pink">相识</span> ——
-              在一个再普通不过的雨天，我们挤在同一把伞下躲雨。那时的我们不会想到，这一场雨，会淋湿往后很长很长的岁月。
+              在三月一个风和日丽的日子里，我们于观音桥初次相见。那时的我们还不知道，这看似寻常的一面，会拉开属于我们的故事序幕。
             </p>
             <p>
               <span className="font-semibold text-couple-orange">相知</span> ——
-              从深夜的长谈到一起犯傻的周末，从一杯咖啡到一桌子家常菜。我们慢慢看清彼此的笨拙与可爱，也学着接纳对方的不完美。
+              从夜爬缙云山等一场日出，到漫步嘉陵江畔吹晚风；从一杯咖啡的闲谈到一桌子家常菜的烟火。我们慢慢看清彼此的笨拙与可爱，也学着接纳对方的不完美。
             </p>
             <p>
               <span className="font-semibold text-couple-purple">相爱</span> ——
@@ -74,13 +74,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://picsum.photos/seed/story1/400/500"
+              src="/images/page/20240323-gyq-1.jpg"
               alt="我们的故事"
               loading="lazy"
               className="rounded-2xl shadow-lg w-full h-full object-cover"
             />
             <img
-              src="https://picsum.photos/seed/story2/400/500"
+              src="/images/page/20240330-jys.jpg"
               alt="我们的故事"
               loading="lazy"
               className="rounded-2xl shadow-lg w-full h-full object-cover mt-8"

@@ -5,7 +5,7 @@ import { Heart } from 'lucide-react';
 import { daysSince } from '@/lib/utils';
 
 // 相恋起始日期（可按实际情况修改）
-const START_DATE = '2024-05-20';
+const START_DATE = '2024-05-04';
 
 export default function Footer() {
   // 在客户端计算相恋天数，避免服务端/客户端时间不一致导致的 hydration 不匹配
